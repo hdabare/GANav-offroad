@@ -1,9 +1,9 @@
 # dataset settings
-dataset_type = 'RELLISDataset_Group6'
-data_root = 'data/rellis/'
+dataset_type = 'OutbackDataset_Group6'
+data_root = 'data/outback/'
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
-img_size = (1920, 1200)
+img_size = (1920, 1080)
 crop_size = (375, 600)
 train_pipeline = [
     dict(type='LoadImageFromFile'),
@@ -43,20 +43,19 @@ data = dict(
         data_root=data_root,
         img_dir='image',
         ann_dir='annotation',
-        split='our_train.txt',
+        split='train.txt',
         pipeline=train_pipeline),
     val=dict(
         type=dataset_type,
         data_root=data_root,
         img_dir='image',
         ann_dir='annotation',
-        split='our_val.txt',
+        split='val.txt',
         pipeline=test_pipeline),
     test=dict(
         type=dataset_type,
         data_root=data_root,
         img_dir='image',
         ann_dir='annotation',
-        split='our_test.txt',
+        split='test.txt',
         pipeline=test_pipeline))
-
