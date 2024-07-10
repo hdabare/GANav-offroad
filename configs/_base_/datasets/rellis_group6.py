@@ -57,6 +57,6 @@ data = dict(
         data_root=data_root,
         img_dir='image',
         ann_dir='annotation',
-        split='our_test.txt',
+        split='our_test_without_ac.txt',
         pipeline=test_pipeline))
 
