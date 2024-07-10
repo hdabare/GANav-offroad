@@ -16,7 +16,7 @@ class OutbackDataset_New_Group6(CustomDataset):
             [ 0, 153, 153 ],[ 0, 128, 255 ]]
 
     def __init__(self, **kwargs):
-        super(OutbackDataset_Group6, self).__init__(
+        super(OutbackDataset_New_Group6, self).__init__(
             img_suffix='.png',
             seg_map_suffix='_new_group6.png',
             **kwargs)
