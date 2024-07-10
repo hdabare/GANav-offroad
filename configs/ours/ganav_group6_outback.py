@@ -23,7 +23,7 @@ model=dict(
     decode_head=dict(img_size=(375, 600)))
 
 data = dict(
-    samples_per_gpu=6,
+    samples_per_gpu=16,
     workers_per_gpu=2)
 
 
