@@ -1,5 +1,5 @@
 _base_ = [
-    '../_base_/models/ours_class_att.py', '../_base_/datasets/outback_group6_300x375.py',
+    '../_base_/models/ours_class_att.py', '../_base_/datasets/outback_group6.py',
     '../_base_/default_runtime.py'
 ]
 
