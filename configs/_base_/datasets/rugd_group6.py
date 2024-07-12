@@ -57,6 +57,6 @@ data = dict(
         data_root=data_root,
         img_dir='RUGD_frames-with-annotations',
         ann_dir='RUGD_annotations',
-        split='test_ours.txt',
+        split='outback_test.txt',
         pipeline=test_pipeline))
 
